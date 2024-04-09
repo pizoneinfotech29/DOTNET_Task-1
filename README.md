@@ -1,6 +1,14 @@
 # DOTNET_Task-1
 COPY AND PASTE THE BELOW LINK TO GET MORE PROJECTS AND MORE THINGS😊
 {github.com/keshri29}
+    if(moduleName == "Person")
+              {
+                query += $" where ([{schema}].[{moduleName}].[Full_Name] <> 'System Generated' ) and [{schema}].[{moduleName}].[Record_State] in ('{recordState.Replace(",", "', '")}')";
+              }
+            else
+            {
+                query += $" where [{schema}].[{moduleName}].[Record_State] in ('{recordState.Replace(",", "', '")}')";
+            }
 
 Create 3 table in DotNet using swaggerAPI
 1.School
